@@ -1,0 +1,23 @@
+//App main colors and text style
+$fontFamily:'Abril Fatface', Arial;
+$primaryColor: greenyellow;
+$secondaryColor: rgb(0,20,40);
+//NavBar Colors
+$navBarColor: rgb(0,60,80);
+$navText:white;
+//card color:
+$cardColor: $navBarColor;
+
+
+$primaryLinkColor:red;
+$hoverLinkColor:red;
+
+
+
+
+
+@import "./support";
+@import "./navBars";
+@import "./buttons";
+@import "./_cards";
+@import "./projectSpecific";

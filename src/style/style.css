@@ -1,0 +1,452 @@
+/* Base normalization*/
+html, body, div, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: transparent;
+  -webkit-box-shadow: 0px 0px 0px transparent;
+          box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  background: transparent;
+  -webkit-box-shadow: 0px 0px 0px transparent;
+          box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* Support classes */
+/* Position */
+.left {
+  left: 0;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.right {
+  right: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.top {
+  top: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.botton {
+  bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/* container */
+.container {
+  margin: 0px auto;
+  padding: 0;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.col {
+  width: 100%;
+}
+
+.nav-wrapper-vertical {
+  position: fixed;
+  z-index: 2;
+  right: 0px;
+  height: 60px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 3px 1px black;
+          box-shadow: 0px 0px 3px 1px black;
+  overflow: hidden;
+  background-color: #003c50;
+}
+
+.nav-wrapper-vertical .text, .nav-wrapper-vertical p, .nav-wrapper-vertical h1, .nav-wrapper-vertical h2, .nav-wrapper-vertical h3, .nav-wrapper-vertical h4, .nav-wrapper-vertical h5, .nav-wrapper-vertical p {
+  margin: 11px;
+  font-family: "Abril Fatface", Arial;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+}
+
+.nav-wrapper-vertical h1 {
+  margin: 9px;
+  font-size: 32px;
+}
+
+.nav-wrapper-vertical .navImg {
+  display: none;
+}
+
+.nav-wrapper-vertical ul {
+  margin: 0px;
+  padding: 11px  0px;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.nav-wrapper-vertical ul li {
+  display: inline;
+  padding: 10px;
+  font-size: 24px;
+  color: red;
+}
+
+.nav-wrapper-vertical ul li:hover {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-wrapper-vertical .inner-nav-inline {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav-wrapper-vertical .inner-nav-inline a {
+  display: inline;
+  padding: 5px;
+  margin: 0px;
+  color: red;
+}
+
+.nav-wrapper-vertical .inner-nav-inline a:hover {
+  color: red;
+}
+
+.vnav-content {
+  padding-top: 70px;
+}
+
+.nav-wrapper-horizontal {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  height: 100%;
+  width: 250px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 3px 1px black;
+          box-shadow: 0px 0px 3px 1px black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #003c50;
+}
+
+.nav-wrapper-horizontal .container {
+  min-width: 250px;
+}
+
+.nav-wrapper-horizontal .closebtn {
+  /*Buttons*/
+  position: absolute;
+  color: red;
+  top: 0;
+  right: 25px;
+  font-size: 46px;
+  margin-left: 50px;
+}
+
+.nav-wrapper-horizontal .navImg {
+  padding: 50px 0px 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 150px;
+  width: 150px;
+}
+
+.nav-wrapper-horizontal h1, .nav-wrapper-horizontal h2, .nav-wrapper-horizontal h3, .nav-wrapper-horizontal h4, .nav-wrapper-horizontal h5, .nav-wrapper-horizontal p {
+  font-family: 'Abril Fatface', cursive;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.nav-wrapper-horizontal h1 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+
+.nav-wrapper-horizontal h2 {
+  padding-top: 10px;
+  padding-left: 24px;
+  font-size: 24px;
+  margin: 0px;
+  color: red;
+}
+
+.nav-wrapper-horizontal ul {
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 24px;
+  width: 100%;
+}
+
+.nav-wrapper-horizontal ul li {
+  padding: 5px 0px;
+  font-size: 24px;
+  color: red;
+}
+
+.nav-wrapper-horizontal ul li:hover {
+  color: red;
+}
+
+.nav-wrapper-horizontal ul li:hover:after {
+  content: "\2022";
+  margin-left: 8px;
+  color: red;
+}
+
+.nav-wrapper-horizontal .inner-nav-inline {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 16px;
+}
+
+.nav-wrapper-horizontal .inner-nav-inline a {
+  display: inline;
+  padding: 5px;
+  margin: 0px;
+  color: red;
+}
+
+.nav-wrapper-horizontal .inner-nav-inline a:hover {
+  color: red;
+}
+
+.hnav-content {
+  padding-left: 300px;
+  width: 65%;
+}
+
+.navColor {
+  background-color: rgba(173, 255, 47, 0.8);
+}
+
+#openArrow {
+  position: fixed;
+  color: greenyellow;
+  left: -30px;
+  top: 40%;
+  cursor: pointer;
+  z-index: 3;
+  text-shadow: 1px 1px 1px black;
+}
+
+#openArrow p {
+  font-size: 48px;
+}
+
+#openArrow:hover {
+  color: #001428;
+}
+
+.hmbg-button {
+  display: none;
+}
+
+@media screen and (max-width: 1066px) {
+  .use-horizontal-nav {
+    margin-left: 25px;
+    width: 90%;
+  }
+  #openArrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hmbg-button {
+    display: block;
+    position: fixed;
+    color: white;
+    font-size: 25px;
+  }
+  .nav-wrapper-horizontal {
+    display: none;
+    top: 50px;
+    width: 250px;
+    background-color: greenyellow;
+  }
+  .nav-wrapper-horizontal h1 {
+    display: none;
+  }
+  .nav-wrapper-horizontal .closebtn {
+    display: none;
+  }
+  .nav-wrapper-horizontal .navImg {
+    display: none;
+  }
+}
+
+.expand {
+  display: block;
+}
+
+.btn {
+  width: 150px;
+  padding: 8px 25px;
+  border-radius: 3px;
+  border: 0px;
+  font-family: "Abril Fatface", Arial;
+  font-size: 24px;
+  background: transparent;
+  color: greenyellow;
+  border: 2px solid greenyellow;
+}
+
+.btn:hover {
+  color: #001428;
+  background-color: greenyellow;
+  border: 2px solid greenyellow;
+  font-style: bolder;
+  cursor: pointer;
+}
+
+.active {
+  background-color: greenyellow;
+  color: #001428;
+  border: 3px solid greenyellow;
+}
+
+.card {
+  min-width: 100px;
+  min-height: 200px;
+  border-radius: 15px 15px 0px 0px;
+  margin: 12px;
+  background: #003c50;
+}
+
+.tasks-list {
+  min-width: 750px;
+  min-height: 500px;
+  border-radius: 9px 9px 0px 0px;
+  margin: 12px;
+  background: transparent;
+  text-align: center;
+  font-family: Helvetica;
+  -webkit-box-shadow: 0px 3px 7px 1px black;
+          box-shadow: 0px 3px 7px 1px black;
+}
+
+.tasks-list div {
+  border-radius: 9px 9px 0px 0px;
+  width: 100%;
+  background-color: #001428;
+  padding: 10px 0px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.tasks-list h1 {
+  font-family: "Abril Fatface", Arial;
+}
+
+.tasks-list h1, .tasks-list h2, .tasks-list h3, .tasks-list h4, .tasks-list h5 {
+  color: greenyellow;
+}
+
+.Home {
+  top: 0px;
+  margin: 0px;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Home h1 {
+  font-size: 72px;
+}
+
+.Home h2 {
+  font-size: 48px;
+}
+
+.Home h3 {
+  font-size: 36px;
+}
+
+.Home h3 {
+  font-size: 24px;
+}
+
+.section {
+  background: lightgrey;
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
