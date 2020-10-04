@@ -1,12 +1,17 @@
+// Sections:
 .Home{
     top:0px;
     margin:0px;
     color:white;
     width:100%;
     height: 100vh;
-    background: url(https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    //background: url(https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background: url(https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-1.2.1&auto=format&fit=crop&w=1457&q=80);
+    overflow: auto;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     h1{
         font-size: 72px;
     }
@@ -21,9 +26,69 @@
     }
 }
 
-.section{
-    background: lightgrey;
-    height: 100%;
-    width: 100%;
+.tasksSection{
+    position:fixed;
+    top:0px;
+    margin:0px;
+    width:100%;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
+.clockSection{
+    position:fixed;
+    top:0px;
+    margin:0px;
+    width:100%;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80);
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+// Syling:
+.inputButton { 
+    position: relative; 
+    input {
+        padding-left: 30px;
+    }
+    i{ 
+        position: absolute; 
+        left: 10px; 
+        top: 12px; 
+    } 
+
+    input:hover ~ i{
+        color:$secondaryColor;
+    }
+} 
+
+
+.inputText{
+    padding-left: 10px;
+    width: 60%;
+    background: rgba($secondaryColor,0.6);
+    box-shadow: 0px 0px 0px transparent;
+    border: 2px solid $primaryColor;
+    text-shadow: 0px 0px 0px transparent;
+    color:white;
+  }
+  
+  .inputText:active {
+     outline: none;
+     border: 2px solid $primaryColor;
+    }
+  
+ .inputText:focus {
+    background: rgba($secondaryColor,0.6);
+    border: 2px solid $primaryColor;
+    outline: 0;
+  }

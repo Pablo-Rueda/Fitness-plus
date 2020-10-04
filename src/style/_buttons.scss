@@ -16,8 +16,24 @@
     border:2px solid $primaryColor;
     font-style: bolder;
     cursor: pointer;
+   .btn:hover ~ i{
+      color:$secondaryColor;
+    }
   }
-  
+
+
+
+  .btn-small{
+    @extend .btn;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    font-size:18px;
+  }
+
+  input[type=submit]{
+    @extend .btn-small;
+  }
   .active {
     background-color:$primaryColor;
     color:$secondaryColor;
