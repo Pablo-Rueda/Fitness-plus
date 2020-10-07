@@ -40,3 +40,14 @@
     border:3px solid $primaryColor;
   }
 
+  @media screen and (max-width: 775px) {
+    width: 150px;
+    padding: 0px;
+    border-radius: 3px;
+    border:0px;
+    font-family: $fontFamily;
+    font-size:24px;
+    background: transparent;
+    color:$primaryColor;
+    border:2px solid $primaryColor;
+}

@@ -1,8 +1,8 @@
 $radius: 9px 9px 0px 0px;
 
 .card{
-    min-width: 75px;
-    min-height: 200px;
+    min-width: 50px;
+    min-height: 225px;
     border-radius:0px;
     margin:12px;
     background: rgba($cardColor,0.8);
@@ -10,7 +10,6 @@ $radius: 9px 9px 0px 0px;
     text-align: center;
     border:1px solid $primaryColor;
     box-shadow: 1px 0px 5px $primaryColor;
-    ;
     h1,h2,h3,h4,h5{
         padding:12px;
     }
@@ -52,6 +51,20 @@ $radius: 9px 9px 0px 0px;
             background-color: rgba($cardColor,0.5);
             border-bottom: 1px solid grey;
             text-shadow: 1px 1px 3px black;
+            div{
+                .icons{
+                    padding-left: 50px;
+                    i{
+                        padding-right: 15px;
+                    }
+                }
+                .list-text{
+                    padding-left: 100px;
+                }
+                .clock-text{
+                    padding-left: 50px;
+                }
+            }
         }
     }
     h1{
@@ -66,5 +79,45 @@ $radius: 9px 9px 0px 0px;
     i{
         color:$primaryColor;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .card{
+        min-width: 100%;
+        min-height: 225px;
+        padding:0px;
+        margin:0px;
+        background: rgba($cardColor,0.8);
+        border-radius: 0px;
+        text-align: center;
+        h1,h2,h3,h4,h5{
+            padding:12px;
+        }
+    }
+    .card-list{
+        min-width: 50px;
+        min-height: 50px;
+        padding:0px;
+        margin:0px;
+        .title{
+            width: 100%;
+        }
+        ul{
+            li{ 
+                width: 100%;
+                div{
+                    .icons{
+                        padding-left: 15px;
+                    }
+                    .clock-text{
+                        padding-left: 20px;
+                    }
+                    .list-text{
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
     }
 }

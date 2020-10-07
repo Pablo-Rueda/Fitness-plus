@@ -6,11 +6,9 @@ const TaskItem = ({task}) => {
     return ( 
         <li >
             <div className="flex-row" style={{justifyContent: "flex-start"}}>
-                <i className="fas fa-trash-alt" style={{paddingLeft:"50px"}} onClick={() => removeTask(task.id)}></i>
-                <div className="flex-row" style={{paddingLeft:"100px"}}>{task.todo}</div>
-            </div>
-
-            
+                <i className="fas fa-trash-alt icons"  onClick={() => removeTask(task.id)}></i>
+                <div className="flex-row list-text">{task.todo}</div>
+            </div> 
         </li>
      );
 }

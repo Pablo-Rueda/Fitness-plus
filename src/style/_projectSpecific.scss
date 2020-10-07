@@ -27,12 +27,12 @@
 }
 
 .tasksSection{
+    background: url(https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     position:fixed;
     top:0px;
     margin:0px;
     width:100%;
     height: 100vh;
-    background: url(https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     overflow: auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,19 +40,21 @@
     background-position: center;
 }
 
-.clockSection{
+.exercSection{
+    color:white;
+    background: url(https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
     position:fixed;
     top:0px;
     margin:0px;
     width:100%;
     height: 100vh;
-    background: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80);
     overflow: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
+
 
 // Syling:
 .inputButton { 
@@ -92,3 +94,62 @@
     border: 2px solid $primaryColor;
     outline: 0;
   }
+
+.circle{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: rgba($secondaryColor,0.8);
+    border:5px solid $primaryColor;
+    box-shadow: 0px 0px 10px $primaryColor;
+    border-radius: 50%;
+}
+
+.nextTask{
+    margin-top: 25px;
+    padding: 10px 20px;
+    color:white;
+    border:2px solid $primaryColor;
+    border-radius: 3px; 
+}
+.nextTask-hover:hover{
+    cursor: pointer;
+    text-decoration: line-through;
+    
+}
+
+.clock-nums{
+      font-size: 72px;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .red{
+        color:red;
+        border:2px solid red;
+        background: transparent;
+
+    }
+    .red:hover{
+        color: $secondaryColor;
+        background-color:red;
+        border:2px solid red;
+    }
+
+
+  @media screen and (max-width: 775px) {
+    .Home{
+
+        h1{
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+}

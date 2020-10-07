@@ -17,7 +17,7 @@ const NewTaskForm = () => {
         onChange={(e)=>setTasks(e.target.value)} required/>
         <div className="inputButton" style={{marginLeft:"50px"}}>
             <input  type="submit" value="Add" />
-            <i class="fas fa-plus"></i>
+            <i className="fas fa-plus"></i>
         </div>    
         
     </form>

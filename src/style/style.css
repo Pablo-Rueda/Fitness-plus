@@ -118,6 +118,20 @@ button:focus, input[type=submit]:focus {
   width: 100%;
 }
 
+.giphy-embed {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 775px) {
+  .toCol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .nav-wrapper-vertical {
   position: fixed;
   z-index: 2;
@@ -396,9 +410,21 @@ button:focus, input[type=submit]:focus {
   border: 3px solid greenyellow;
 }
 
+@media screen and (max-width: 775px) {
+  width: 150px;
+  padding: 0px;
+  border-radius: 3px;
+  border: 0px;
+  font-family: "Abril Fatface", Arial;
+  font-size: 24px;
+  background: transparent;
+  color: greenyellow;
+  border: 2px solid greenyellow;
+}
+
 .card {
-  min-width: 75px;
-  min-height: 200px;
+  min-width: 50px;
+  min-height: 225px;
   border-radius: 0px;
   margin: 12px;
   background: rgba(0, 0, 0, 0.8);
@@ -458,6 +484,22 @@ button:focus, input[type=submit]:focus {
   text-shadow: 1px 1px 3px black;
 }
 
+.card-list ul li div .icons {
+  padding-left: 50px;
+}
+
+.card-list ul li div .icons i {
+  padding-right: 15px;
+}
+
+.card-list ul li div .list-text {
+  padding-left: 100px;
+}
+
+.card-list ul li div .clock-text {
+  padding-left: 50px;
+}
+
 .card-list h1 {
   font-family: "Abril Fatface", Arial;
   color: greenyellow;
@@ -472,6 +514,42 @@ button:focus, input[type=submit]:focus {
 .card-list i {
   color: greenyellow;
   cursor: pointer;
+}
+
+@media screen and (max-width: 775px) {
+  .card {
+    min-width: 100%;
+    min-height: 225px;
+    padding: 0px;
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0px;
+    text-align: center;
+  }
+  .card h1, .card h2, .card h3, .card h4, .card h5 {
+    padding: 12px;
+  }
+  .card-list {
+    min-width: 50px;
+    min-height: 50px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .card-list .title {
+    width: 100%;
+  }
+  .card-list ul li {
+    width: 100%;
+  }
+  .card-list ul li div .icons {
+    padding-left: 15px;
+  }
+  .card-list ul li div .clock-text {
+    padding-left: 20px;
+  }
+  .card-list ul li div .list-text {
+    padding-left: 20px;
+  }
 }
 
 .Home {
@@ -505,12 +583,12 @@ button:focus, input[type=submit]:focus {
 }
 
 .tasksSection {
+  background: url(https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   position: fixed;
   top: 0px;
   margin: 0px;
   width: 100%;
   height: 100vh;
-  background: url(https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   overflow: auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -518,13 +596,14 @@ button:focus, input[type=submit]:focus {
   background-position: center;
 }
 
-.clockSection {
+.exercSection {
+  color: white;
+  background: url(https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
   position: fixed;
   top: 0px;
   margin: 0px;
   width: 100%;
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80);
   overflow: auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -570,5 +649,68 @@ button:focus, input[type=submit]:focus {
   background: rgba(0, 20, 40, 0.6);
   border: 2px solid greenyellow;
   outline: 0;
+}
+
+.circle {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 20, 40, 0.8);
+  border: 5px solid greenyellow;
+  -webkit-box-shadow: 0px 0px 10px greenyellow;
+          box-shadow: 0px 0px 10px greenyellow;
+  border-radius: 50%;
+}
+
+.nextTask {
+  margin-top: 25px;
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid greenyellow;
+  border-radius: 3px;
+}
+
+.nextTask-hover:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.clock-nums {
+  font-size: 72px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.red {
+  color: red;
+  border: 2px solid red;
+  background: transparent;
+}
+
+.red:hover {
+  color: #001428;
+  background-color: red;
+  border: 2px solid red;
+}
+
+@media screen and (max-width: 775px) {
+  .Home h1 {
+    font-size: 36px;
+  }
+  .Home h2 {
+    font-size: 24px;
+  }
+  .Home h3 {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
