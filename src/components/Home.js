@@ -13,15 +13,15 @@ const Home = () => {
         <div className="flex-row toCol" style={{paddingTop: "30px"}}>
           <div className="col card flex-col container">
             <h3 className="center">Set your exercises</h3>
-            <iframe title ={"Set your exercises"} src="https://giphy.com/embed/yuQR81qEAnvh3ywfHv" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+            <p style={{fontSize:"20px",padding:"0px 15px"}}> Set which exercises you would like to realise, in how many rounds, the duration of the rounds and the rest time</p>
           </div>
           <div className="col card flex-col"> 
             <h3 className="center">Test your limits</h3>
-            <iframe title ={"Test your limits"} src="https://giphy.com/embed/OVbzotwnVoupa" frameBorder="0" className="giphy-embed" allowFullScreen ></iframe>
+            <iframe title ={"Beat yourself"} src="https://giphy.com/embed/2eN0NkCvhjxqo"  frameBorder="0" className="giphy-embed" allowFullScreen></iframe>  
           </div>
           <div className="col card flex-col"> 
             <h3 className="center">Beat yourself</h3>
-            <iframe title ={"Beat yourself"} src="https://giphy.com/embed/2eN0NkCvhjxqo"  frameBorder="0" className="giphy-embed" allowFullScreen></iframe>  
+            <p style={{fontSize:"20px",padding:"0px 15px"}}> See your results per round, the number of exercises you did and which ones you completed per round</p>
           </div>
         </div>
       </div>
