@@ -1,13 +1,13 @@
-import React, {useContext} from 'react';
+import React,{useContext} from 'react';
 import { TasksContext } from '../../contexts/TasksContext';
+import SumTask from "./SumTask";
 
 const NextTask = () => {
     const {tasks,removeTask} = useContext(TasksContext);
-
     return tasks.length ?(
         <div className="center flex-col" >
-            <div className="center nextTask nextTask-hover">
-                <h1 className="center" onClick={() => removeTask(tasks[0].id)}>{tasks[0].todo}</h1>   
+            <div className="center">
+                <SumTask tasks={tasks} removeTask={removeTask}/>   
             </div>
         </div>
      ):(

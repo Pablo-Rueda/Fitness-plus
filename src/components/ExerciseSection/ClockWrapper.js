@@ -1,13 +1,22 @@
 import React, {useContext, useEffect } from 'react';
 import { ClockContext } from '../../contexts/ClockContext';
-
+import { CounterContext } from '../../contexts/CounterContext'; 
 
 const ClockWrapper = () => {
     const {copyClock,toggleClock,countDown} = useContext(ClockContext);
+    const {counter,setCounter} = useContext(CounterContext);
 
     useEffect(() => { // implement timer countdown with useEffect hook
         if(copyClock.active){  // active
-            const timer = setInterval(() => countDown(), 1000);
+            const timer = setInterval(() => {
+                countDown();
+                if(copyClock.exerciseMin === 0 && copyClock.exerciseSec === 0){
+                    const copyCounter = [...counter];
+                    copyCounter.unshift({round:(counter[0].round + 1), count:0,itemsDone:[] });
+                    setCounter(copyCounter);
+                    console.log(copyCounter);
+                }
+            }, 1000);
             return () => clearInterval(timer);
 
         }else{   // stop = active: false

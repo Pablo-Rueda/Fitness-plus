@@ -10,7 +10,7 @@ const TasksList = () => {
             <ul>
                 {tasks.map(task => {
                     return(
-                        <TaskItem task={task} key= {task.id} />
+                        <TaskItem task={task} key={task.id} />
                     )
                 })}
             </ul>

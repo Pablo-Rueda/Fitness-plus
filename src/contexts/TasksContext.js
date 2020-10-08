@@ -16,6 +16,7 @@ const TasksContextProvider = (props) => {
     const removeTask = (id) => {
         setTasks(tasks.filter(task => task.id !== id));
     };
+
     return ( 
         <TasksContext.Provider value={{tasks,addTask,removeTask}} >
             {props.children} 
